@@ -1,0 +1,17 @@
+{
+  // Start ssh tunnel with:
+  // ssh -R 9000:localhost:9000 bfa@kurs.bibel-fuer-alle.net
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "XDebug Myddleware",
+      "type": "php",
+      "request": "launch",
+      "port": 9000,
+      "pathMappings": {
+        "/var/www/vhosts/h2789220.stratoserver.net/services/myddleware": "${workspaceRoot}"
+      },
+      "log": true
+    }
+  ]
+}
